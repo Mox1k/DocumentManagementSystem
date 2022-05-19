@@ -12,7 +12,7 @@
             <ColumnDefinition Width="1.5*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         
-        <Border CornerRadius="10 0 0 10">
+        <Border CornerRadius="0 0 0 10">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                     <GradientStop Color="#1dd1a1" Offset="0"></GradientStop>
@@ -34,7 +34,7 @@
             </Grid>
         </Border>
 
-        <Border CornerRadius="0 10 10 0" Background="White" Grid.Column="1">
+        <Border CornerRadius="0 0 10 0" Background="White" Grid.Column="1">
             <StackPanel VerticalAlignment="Center">
                 <TextBlock Text="Войдите в приложение" Style="{StaticResource titleText}" Foreground="#01a3a4"></TextBlock>
                 <TextBox Text="Логин" Style="{StaticResource textHint}"></TextBox>
