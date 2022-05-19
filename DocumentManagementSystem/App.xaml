@@ -4,59 +4,6 @@
              xmlns:local="clr-namespace:DocumentManagementSystem"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        
-        <Style x:Key="titleText" TargetType="TextBlock">
-            <Setter Property="FontWeight" Value="Bold"></Setter>
-            <Setter Property="FontSize" Value="35"></Setter>
-            <Setter Property="Foreground" Value="AliceBlue"></Setter>
-            <Setter Property="TextAlignment" Value="Center"></Setter>
-        </Style>
 
-        <Style x:Key="normalText" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="15"></Setter>
-            <Setter Property="TextWrapping" Value="Wrap"></Setter>
-            <Setter Property="Foreground" Value="White"></Setter>
-            <Setter Property="VerticalAlignment" Value="Center"></Setter>
-            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
-            <Setter Property="TextAlignment" Value="Center"></Setter>
-        </Style>
-
-        <Style x:Key="button" TargetType="Button">
-            <Setter Property="FontSize" Value="15"></Setter>
-            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
-            <Setter Property="FontWeight" Value="Bold"></Setter>
-            <Setter Property="Width" Value="200"></Setter>
-            <Setter Property="Foreground" Value="White"></Setter>
-            <Setter Property="Background" Value="Transparent"></Setter>
-
-            <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="25" BorderThickness="1" BorderBrush="White" Padding="15" Background="{TemplateBinding Background}">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="AntiqueWhite"></Setter>
-                    <Setter Property="Foreground" Value="DimGray"></Setter>
-                </Trigger>
-                
-                <Trigger Property="IsMouseCaptured" Value="True">
-                    <Setter Property="Background" Value="WhiteSmoke"></Setter>
-                    <Setter Property="Foreground" Value="DimGray"></Setter>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-
-        <Style x:Key="textHint" TargetType="TextBox">
-            <Setter Property="FontSize" Value="14"></Setter>
-            <Setter Property="Foreground" Value="LightGray"></Setter>
-            <Setter Property="FontSize" Value="14"></Setter>
-        </Style>
-        
     </Application.Resources>
 </Application>
