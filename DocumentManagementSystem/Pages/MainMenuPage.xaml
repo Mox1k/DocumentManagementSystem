@@ -4,9 +4,10 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DocumentManagementSystem.Pages"
+      xmlns:wpfui="http://schemas.lepo.co/wpfui/2022/xaml"
       mc:Ignorable="d" 
-      d:DesignHeight="1080" d:DesignWidth="1920"
-      Title="MainMenuPage" Background="White">
+      d:DesignHeight="1080" d:DesignWidth="1920" Background="Transparent"
+      Title="MainMenuPage">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -20,17 +21,121 @@
             <RowDefinition></RowDefinition>
             <RowDefinition Height="0.5*"></RowDefinition>
         </Grid.RowDefinitions>
+
+        <Border Grid.ColumnSpan="4" Grid.RowSpan="3">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#3aa9cd" Offset="0.1"></GradientStop>
+                    <GradientStop Color="#3aada1" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+        <Canvas>
+            <Rectangle Fill="#FF4EB1B6" Height="100" Width="100" Canvas.Left="261" Canvas.Top="888" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-26.798"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle Fill="#FF4EB1B6" Height="150" Width="150" Canvas.Left="877" Canvas.Top="836" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle Fill="#FF4EB1B6" Height="55" Width="55" Canvas.Left="1287" Canvas.Top="899" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="5.083"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Ellipse Width="100" Height="100" Fill="#FF4EB1B6" Canvas.Left="922" Canvas.Top="61"></Ellipse>
+            <Ellipse Width="128" Height="128" Fill="#FF4EB1B6" Canvas.Left="206" Canvas.Top="61" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Ellipse Width="148" Height="148" Fill="#FF4EB1B6" Canvas.Left="1544" Canvas.Top="834" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Rectangle Fill="#FF4EAEB6" Height="127" Width="127" Canvas.Left="534" Canvas.Top="117" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="67.856"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Polygon Points="100,100 200,100 200,200" Fill="#FF4EB1B6" RenderTransformOrigin="0.5,0.5" Canvas.Left="1284" Canvas.Top="-100" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Polygon.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="135"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Polygon.RenderTransform>
+            </Polygon>
+            <Polygon Points="100,100 200,100 200,200" Fill="#FF4EB1B6" RenderTransformOrigin="0.5,0.5" Canvas.Left="415" Canvas.Top="980" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Polygon.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Polygon.RenderTransform>
+            </Polygon>
+        </Canvas>
+
         <Border Grid.Row="1">
-            <Button Background="#4eb1b6" Height="350" Width="350px"/>
+            <Button Background="#4eb1b6" Height="350" Width="350px" FontSize="34" Click="Docs_Click">
+                <Button.Effect>
+                    <DropShadowEffect  Color="#4eb1b6" BlurRadius="50"></DropShadowEffect>
+                </Button.Effect>
+                <TextBlock Text="Добавить и посмотреть документы" TextWrapping="Wrap" TextAlignment="Center"/>
+            </Button>
         </Border>
         <Border Grid.Row="1" Grid.Column="1">
-            <Button Background="#4eb1b6" Height="350" Width="350px"/>
+            <Button Background="#FF4EAEB6" Height="350" Width="350px" FontSize="34">
+                <Button.Effect>
+                    <DropShadowEffect  Color="#4eb1b6" BlurRadius="50"></DropShadowEffect>
+                </Button.Effect>
+                Заявка
+            </Button>
         </Border>
         <Border Grid.Row="1" Grid.Column="2">
-            <Button Background="#4eb1b6" Height="350" Width="350px"/>
+            <Button Background="#4eb1b6" Height="350" Width="350px" FontSize="34">
+                <Button.Effect>
+                    <DropShadowEffect  Color="#4eb1b6" BlurRadius="50"></DropShadowEffect>
+                </Button.Effect>
+                Клиенты
+            </Button>
         </Border>
         <Border Grid.Row="1" Grid.Column="3">
-            <Button  Background="#4eb1b6" Height="350" Width="350px"/>
+            <Button  Background="#4eb1b6" Height="350" Width="350px" FontSize="34">
+                <Button.Effect>
+                    <DropShadowEffect  Color="#4eb1b6" BlurRadius="50"></DropShadowEffect>
+                </Button.Effect>
+                Сотрудники
+            </Button>
+        </Border>
+        <Border Grid.Row="0" Grid.Column="3" >
+            <wpfui:Button Icon="ChannelAdd48" Background="#4eb1b6" Width="350" Height="100" FontSize="18">
+                <Button.Effect>
+                    <DropShadowEffect  Color="#4eb1b6" BlurRadius="50"></DropShadowEffect>
+                </Button.Effect>
+                Создать инициативное поручение
+            </wpfui:Button>
         </Border>
     </Grid>
 </Page>

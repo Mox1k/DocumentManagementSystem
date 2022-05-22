@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DocumentManagementSystem"
         xmlns:wpfui="http://schemas.lepo.co/wpfui/2022/xaml"
-        mc:Ignorable="d"
-        Title="MainProgramm" Width="1920" Height="1080" Background="Transparent" WindowStartupLocation="CenterOwner">
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" Background="Transparent"
+        Title="MainProgramm" Width="1920" Height="1080" ResizeMode="NoResize">
+    
     <Grid>
         <Frame x:Name="_MainMenuNavigationFrame" NavigationUIVisibility="Hidden" />
     </Grid>

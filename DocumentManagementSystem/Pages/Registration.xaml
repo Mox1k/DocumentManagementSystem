@@ -17,7 +17,6 @@
 
         <Border CornerRadius="0 0 0 10" Grid.Column="0">
             <Border.Background>
-
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                     <GradientStop Color="#3aa9ad" Offset="0"></GradientStop>
                     <GradientStop Color="#3aada1" Offset="1"></GradientStop>
@@ -25,7 +24,6 @@
             </Border.Background>
 
             <Grid>
-
                 <Canvas>
                     <Polygon Points="0,20 230,140, 0,270" Fill="#4eb1b6" Canvas.Top="125" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                     <Polygon Points="100,400 200,370 180,470 " Fill="#4eb1b6" Canvas.Left="90" Canvas.Top="-25" HorizontalAlignment="Center" VerticalAlignment="Top"></Polygon>
@@ -38,7 +36,6 @@
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Если у Вас уже есть аккаунт, пройдите авторизацию" TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0 20 0 20" Foreground="White" FontSize="12"></TextBlock>
                     <wpfui:Button x:Name="RegClick" Background="Transparent" Foreground="White" BorderBrush="White" Width="100" Click="Auth_Click">Авторизация</wpfui:Button>
                 </StackPanel>
-
             </Grid>
         </Border>
 
@@ -101,10 +98,8 @@
                         </wpfui:TextBox.Text>
                     </wpfui:PasswordBox>
                     <wpfui:Button Foreground="White" Background="#4eb1b6" Width="200" Margin="0 20 0 0" Click="RegReg_Click">Зарегистрироваться</wpfui:Button>
-
                 </StackPanel>
             </Grid>
         </Border>
-
     </Grid>
 </Page>

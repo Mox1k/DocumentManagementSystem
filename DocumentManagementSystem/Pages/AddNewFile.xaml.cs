@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace DocumentManagementSystem.Pages
 {
     /// <summary>
-    /// Interaction logic for MainMenuPage.xaml
+    /// Interaction logic for AddNewFile.xaml
     /// </summary>
-    public partial class MainMenuPage : Page
+    public partial class AddNewFile : Page
     {
-        public MainMenuPage()
+        public AddNewFile()
         {
             InitializeComponent();
-        }
-
-        private void Docs_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new Uri("Pages/AddNewFile.xaml", UriKind.Relative));
         }
     }
 }

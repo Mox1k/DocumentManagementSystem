@@ -44,7 +44,13 @@ namespace DocumentManagementSystem.Pages
                         var user = _context.Users.Where(x => x.Login == Log.Text && x.Password == Pass.Text).FirstOrDefault();
                         if (user != null)
                         {
-                            MessageBox.Show("Вы авторизованы");
+                            MainProgramm taskWindow = new MainProgramm();
+
+                            var CloseWindow = Application.Current.Windows;
+
+                            CloseWindow[0].Close();
+                            
+                            taskWindow.Show();
                         }
                     }
                 }

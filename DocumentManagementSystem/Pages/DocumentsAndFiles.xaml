@@ -1,0 +1,79 @@
+﻿<Page x:Class="DocumentManagementSystem.Pages.DocumentsAndFiles"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DocumentManagementSystem.Pages"
+      xmlns:wpfui="http://schemas.lepo.co/wpfui/2022/xaml"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="DocumentsAndFiles" Background="White">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="3">
+            <wpfui:Button Icon="PresenceOffline10" FontSize="30" Height="50" Width="50" Background="Red" Margin="530,87,26,0" VerticalAlignment="Top"></wpfui:Button>
+        </Border>
+
+        <Border>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock FontSize="32" Margin="0 0 100 0">Документы</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Документы внутренние</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Документы входящие</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Документы исходящие</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Мои документы</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Файлы</TextBlock>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Column="1">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 28">
+                <TextBlock FontSize="32" Margin="0 0 0 0">Создать</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Документ внутренний</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Документ исходящие</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Письмо</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Процесс</TextBlock>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Column="2">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 38 0 0">
+                <TextBlock FontSize="32" Margin="0 0 100 0">Документы</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Дополнительные обработки</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Загрузка электронной почти</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Отправить и получить электронные документы</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Поиск документов и файлов</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Полнотекстовый поиск</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Потоковое сканирование</TextBlock>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 3 0">
+                <TextBlock FontSize="32" Margin="0 0 100 0">Остальное</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Вопросы деятельности</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Все файлы</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Дела (тома)</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Журнал передачи</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Инструкции</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Отчеты</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0">Передача дел в архив</TextBlock>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="1">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="65,137 0,0">
+                <TextBlock FontSize="32" Margin="0 0 100 0">Отчеты</TextBlock>
+                <TextBlock FontSize="24" Margin="100 0 0 0" TextWrapping="Wrap" Width="314">Неподписанные внутренние документы</TextBlock>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
