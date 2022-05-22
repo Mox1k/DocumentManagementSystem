@@ -25,10 +25,20 @@
             </Border.Background>
 
             <Grid>
+
                 <Canvas>
-                    <Polygon Points="0,20 230,140, 0,270" Fill="#4eb1b6"></Polygon>
-                    <Polygon Points="100,400 200,370 180,470 " Fill="#4eb1b6"></Polygon>
+                    <Polygon Points="0,20 230,140, 0,270" Fill="#4eb1b6" Canvas.Top="125" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Polygon Points="100,400 200,370 180,470 " Fill="#4eb1b6" Canvas.Left="90" Canvas.Top="-25" HorizontalAlignment="Center" VerticalAlignment="Top"></Polygon>
+                    <Ellipse Fill="#4eb1b6" Width="100" Height="100" Canvas.Left="110" Canvas.Top="44" ></Ellipse>
+                    <Ellipse Fill="#4eb1b6" Width="50" Height="50" Canvas.Left="35" Canvas.Top="420" HorizontalAlignment="Center" VerticalAlignment="Top" ></Ellipse>
                 </Canvas>
+
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Авторизация" FontWeight="Bold" Foreground="White" FontSize="30"></TextBlock>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Если у Вас уже есть аккаунт, пройдите авторизация" TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0 20 0 20" Foreground="White" FontSize="12"></TextBlock>
+                    <wpfui:Button x:Name="RegClick" Background="Transparent" Foreground="White" BorderBrush="White" Width="100" Click="Auth_Click">Авторизация</wpfui:Button>
+                </StackPanel>
+
             </Grid>
         </Border>
 
@@ -36,17 +46,65 @@
             <Grid>
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Регистрация" FontWeight="Bold" Foreground="#1eb1b6" FontSize="30"></TextBlock>
-                    <wpfui:TextBox AcceptsReturn="True" Placeholder="Фамилия" Margin="0 20 0 0" BorderBrush="LightGray" Width="350" Background="#4eb1b6"/>
-                    <wpfui:TextBox AcceptsReturn="True" Placeholder="Имя" Margin="0 20 0 0" BorderBrush="LightGray" Width="350" Background="#4eb1b6"/>
-                    <wpfui:TextBox AcceptsReturn="True" Placeholder="Отчество" Margin="0 20 0 0" BorderBrush="LightGray" Width="350" Background="#4eb1b6"/>
-                    <wpfui:TextBox AcceptsReturn="True" Placeholder="Логин" Margin="0 20 0 20" BorderBrush="LightGray" Width="350" Background="#4eb1b6"/>
-                    <wpfui:PasswordBox Placeholder="Пароль" Width="350" Margin="0 0 0 20" Background="#4eb1b6"/>
-                    <wpfui:PasswordBox Placeholder="Повтроите пароль" Width="350" Background="#4eb1b6"/>
-                    <wpfui:Button Foreground="White" Background="#4eb1b6" Width="200" Margin="0 20 0 0">Зарегестрироваться</wpfui:Button>
+                    <wpfui:TextBox x:Name="Surname" AcceptsReturn="True" Placeholder="Фамилия" Margin="0 20 0 0" BorderBrush="LightGray" Width="350" Background="#4eb1b6">
+                        <wpfui:TextBox.Text>
+                            <Binding Path="Surname">
+                                <Binding.ValidationRules>
+                                    <ExceptionValidationRule></ExceptionValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </wpfui:TextBox.Text>
+                    </wpfui:TextBox>
+                    <wpfui:TextBox x:Name="Name" AcceptsReturn="True" Placeholder="Имя" Margin="0 20 0 0" BorderBrush="LightGray" Width="350" Background="#4eb1b6">
+                        <wpfui:TextBox.Text>
+                            <Binding Path="Name">
+                                <Binding.ValidationRules>
+                                    <ExceptionValidationRule></ExceptionValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </wpfui:TextBox.Text>
+                    </wpfui:TextBox>
+                    <wpfui:TextBox x:Name="Patronymic" AcceptsReturn="True" Placeholder="Отчество" Margin="0 20 0 0" BorderBrush="LightGray" Width="350" Background="#4eb1b6">
+                        <wpfui:TextBox.Text>
+                            <Binding Path="Patronymic">
+                                <Binding.ValidationRules>
+                                    <ExceptionValidationRule></ExceptionValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </wpfui:TextBox.Text>
+                    </wpfui:TextBox>
+                    <wpfui:TextBox x:Name="Login" AcceptsReturn="True" Placeholder="Логин" Margin="0 20 0 20" BorderBrush="LightGray" Width="350" Background="#4eb1b6">
+                        <wpfui:TextBox.Text>
+                            <Binding Path="Login">
+                                <Binding.ValidationRules>
+                                    <ExceptionValidationRule></ExceptionValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </wpfui:TextBox.Text>
+                    </wpfui:TextBox>
+                    <wpfui:PasswordBox x:Name="Password" Placeholder="Пароль" Width="350" Margin="0 0 0 20" Background="#4eb1b6">
+                        <wpfui:TextBox.Text>
+                            <Binding Path="Password">
+                                <Binding.ValidationRules>
+                                    <ExceptionValidationRule></ExceptionValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </wpfui:TextBox.Text>
+                    </wpfui:PasswordBox>
+                    <wpfui:PasswordBox x:Name="ConfPass" Placeholder="Повторите пароль" Width="350" Background="#4eb1b6">
+                        <wpfui:TextBox.Text>
+                            <Binding Path="ConfirmPassword">
+                                <Binding.ValidationRules>
+                                    <ExceptionValidationRule></ExceptionValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </wpfui:TextBox.Text>
+                    </wpfui:PasswordBox>
+                    <wpfui:Button Foreground="White" Background="#4eb1b6" Width="200" Margin="0 20 0 0" Click="RegReg_Click">Зарегистрироваться</wpfui:Button>
 
                 </StackPanel>
             </Grid>
         </Border>
-        
+
     </Grid>
 </Page>

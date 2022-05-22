@@ -8,45 +8,6 @@
         mc:Ignorable="d" WindowStartupLocation="CenterScreen" Background="Transparent"
         Title="MainWindow" Height="500" Width="800" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="1.5*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-
-        <Border CornerRadius="0 0 0 10" Grid.Column="0">
-            <Border.Background>
-                
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#3aa9ad" Offset="0"></GradientStop>
-                    <GradientStop Color="#3aada1" Offset="1"></GradientStop>
-                </LinearGradientBrush>
-            </Border.Background>
-
-            <Grid>
-                <Canvas>
-                    <Polygon Points="0,20 230,140, 0,270" Fill="#4eb1b6"></Polygon>
-                    <Polygon Points="100,400 200,370 180,470 " Fill="#4eb1b6"></Polygon>
-                </Canvas>
-                
-                <StackPanel VerticalAlignment="Center">
-                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Регистрация" FontWeight="Bold" Foreground="White" FontSize="30"></TextBlock>
-                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Если вы не зарегестрированы в приложении, пройдите регистрацию" TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0 20 0 20" Foreground="White" FontSize="12"></TextBlock>
-                    <wpfui:Button Background="Transparent" Foreground="White" BorderBrush="White" Width="100">Регистрация</wpfui:Button>
-                </StackPanel>
-                
-            </Grid>
-        </Border>
-        
-        <Border CornerRadius="0 0 10 0" Background="White" Grid.Column="1">
-            <Grid>
-                <StackPanel VerticalAlignment="Center">
-                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Авторизация" FontWeight="Bold" Foreground="#1eb1b6" FontSize="30"></TextBlock>
-                    <wpfui:TextBox AcceptsReturn="True" Placeholder="Логин" Margin="0 20 0 20" BorderBrush="LightGray" Width="350" Background="#4eb1b6"/>
-                    <wpfui:PasswordBox Placeholder="Пароль" BorderBrush="Gray" Width="350" Background="#4eb1b6"/>
-                    <wpfui:Button Foreground="White" Background="#4eb1b6" Width="100" Margin="0 20 0 0">Войти</wpfui:Button>
-
-                </StackPanel>
-            </Grid>
-        </Border>
+        <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Hidden" />
     </Grid>
 </Window>

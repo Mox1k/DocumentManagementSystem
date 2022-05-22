@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DocumentManagementSystem.Pages;
+
+
 
 namespace DocumentManagementSystem.Pages
 {
@@ -27,7 +30,7 @@ namespace DocumentManagementSystem.Pages
 
         private void Reg_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Uri("Pages/Registration.xaml", UriKind.Relative));
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)

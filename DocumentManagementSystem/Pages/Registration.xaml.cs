@@ -1,4 +1,8 @@
-﻿using System;
+﻿using DocumentManagementSystem.Data;
+using DocumentManagementSystem.Domain.Entites;
+using DocumentManagementSystem.Domain.Enums;
+using DocumentManagementSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +24,36 @@ namespace DocumentManagementSystem.Pages
     /// </summary>
     public partial class Registration : Page
     {
+        RegisterModel model;
+
+        private void Auth_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("Pages/Login.xaml", UriKind.Relative));
+        }
+
+        private void RegReg_Click(object sender, RoutedEventArgs e)
+        {
+            User user = new User()
+            {
+                Id = Guid.NewGuid(),
+                Name = model.Name,
+                Surname = model.Surname,
+                Patronymic = model.Patronymic,
+                Login = model.Login,
+                Password = model.Password,
+                Posts = Posts.Seller
+            };
+
+            using (ApplicationDbContext context = new ApplicationDbContext())
+            {
+                context.Users.Add(user);
+                context.SaveChanges();
+            }
+        }
         public Registration()
         {
-            InitializeComponent();
+            model = new RegisterModel();
+            this.DataContext = model;
         }
     }
 }

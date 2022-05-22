@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
+using DocumentManagementSystem.Pages;
 using System.Windows.Shapes;
 
 namespace DocumentManagementSystem
@@ -26,6 +27,7 @@ namespace DocumentManagementSystem
         public MainWindow()
         {
             InitializeComponent();
+            _NavigationFrame.Navigate(new Login());
         }
     }
 }

@@ -32,8 +32,8 @@
 
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Регистрация" FontWeight="Bold" Foreground="White" FontSize="30"></TextBlock>
-                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Если вы не зарегестрированы в приложении, пройдите регистрацию" TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0 20 0 20" Foreground="White" FontSize="12"></TextBlock>
-                    <wpfui:Button Background="Transparent" Foreground="White" BorderBrush="White" Width="100" Click="Reg_Click">Регистрация</wpfui:Button>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Если Dы не зарегестрированы в приложении, пройдите регистрацию" TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0 20 0 20" Foreground="White" FontSize="12"></TextBlock>
+                    <wpfui:Button x:Name="RegClick" Background="Transparent" Foreground="White" BorderBrush="White" Width="100" Click="Reg_Click">Регистрация</wpfui:Button>
                 </StackPanel>
 
             </Grid>
