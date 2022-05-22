@@ -35,7 +35,7 @@
 
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Авторизация" FontWeight="Bold" Foreground="White" FontSize="30"></TextBlock>
-                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Если у Вас уже есть аккаунт, пройдите авторизация" TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0 20 0 20" Foreground="White" FontSize="12"></TextBlock>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Если у Вас уже есть аккаунт, пройдите авторизацию" TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0 20 0 20" Foreground="White" FontSize="12"></TextBlock>
                     <wpfui:Button x:Name="RegClick" Background="Transparent" Foreground="White" BorderBrush="White" Width="100" Click="Auth_Click">Авторизация</wpfui:Button>
                 </StackPanel>
 

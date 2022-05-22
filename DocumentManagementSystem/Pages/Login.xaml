@@ -32,7 +32,7 @@
 
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Регистрация" FontWeight="Bold" Foreground="White" FontSize="30"></TextBlock>
-                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Если Dы не зарегестрированы в приложении, пройдите регистрацию" TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0 20 0 20" Foreground="White" FontSize="12"></TextBlock>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Если Вы не зарегестрированы в приложении, пройдите регистрацию" TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0 20 0 20" Foreground="White" FontSize="12"></TextBlock>
                     <wpfui:Button x:Name="RegClick" Background="Transparent" Foreground="White" BorderBrush="White" Width="100" Click="Reg_Click">Регистрация</wpfui:Button>
                 </StackPanel>
 
@@ -46,7 +46,6 @@
                     <wpfui:TextBox AcceptsReturn="True" Placeholder="Логин" Margin="0 20 0 20" BorderBrush="LightGray" Width="350" Background="#4eb1b6"/>
                     <wpfui:PasswordBox Placeholder="Пароль" BorderBrush="Gray" Width="350" Background="#4eb1b6"/>
                     <wpfui:Button Foreground="White" Background="#4eb1b6" Width="100" Margin="0 20 0 0" Click="Login_Click">Войти</wpfui:Button>
-
                 </StackPanel>
             </Grid>
         </Border>
