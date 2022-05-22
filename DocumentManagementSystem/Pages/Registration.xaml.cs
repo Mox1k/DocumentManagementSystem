@@ -49,6 +49,8 @@ namespace DocumentManagementSystem.Pages
                 context.Users.Add(user);
                 context.SaveChanges();
             }
+
+            this.NavigationService.Navigate(new Uri("Pages/Login.xaml", UriKind.Relative));
         }
         public Registration()
         {
