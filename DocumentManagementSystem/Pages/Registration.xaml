@@ -50,7 +50,7 @@
                         <wpfui:TextBox.Text>
                             <Binding Path="Surname">
                                 <Binding.ValidationRules>
-                                    <ExceptionValidationRule></ExceptionValidationRule>
+                                    <DataErrorValidationRule />
                                 </Binding.ValidationRules>
                             </Binding>
                         </wpfui:TextBox.Text>
@@ -59,7 +59,7 @@
                         <wpfui:TextBox.Text>
                             <Binding Path="Name">
                                 <Binding.ValidationRules>
-                                    <ExceptionValidationRule></ExceptionValidationRule>
+                                    <DataErrorValidationRule />
                                 </Binding.ValidationRules>
                             </Binding>
                         </wpfui:TextBox.Text>
@@ -68,7 +68,7 @@
                         <wpfui:TextBox.Text>
                             <Binding Path="Patronymic">
                                 <Binding.ValidationRules>
-                                    <ExceptionValidationRule></ExceptionValidationRule>
+                                    <DataErrorValidationRule />
                                 </Binding.ValidationRules>
                             </Binding>
                         </wpfui:TextBox.Text>
@@ -77,7 +77,7 @@
                         <wpfui:TextBox.Text>
                             <Binding Path="Login">
                                 <Binding.ValidationRules>
-                                    <ExceptionValidationRule></ExceptionValidationRule>
+                                    <DataErrorValidationRule />
                                 </Binding.ValidationRules>
                             </Binding>
                         </wpfui:TextBox.Text>
@@ -86,7 +86,7 @@
                         <wpfui:TextBox.Text>
                             <Binding Path="Password">
                                 <Binding.ValidationRules>
-                                    <ExceptionValidationRule></ExceptionValidationRule>
+                                    <DataErrorValidationRule />
                                 </Binding.ValidationRules>
                             </Binding>
                         </wpfui:TextBox.Text>
@@ -95,7 +95,7 @@
                         <wpfui:TextBox.Text>
                             <Binding Path="ConfirmPassword">
                                 <Binding.ValidationRules>
-                                    <ExceptionValidationRule></ExceptionValidationRule>
+                                    <DataErrorValidationRule />
                                 </Binding.ValidationRules>
                             </Binding>
                         </wpfui:TextBox.Text>
